@@ -2,7 +2,7 @@
 
 A tiny Gutenberg block that displays a YouTube playlist as a clean, numbered list: thumbnail, title, channel and duration. Enter the playlist ID and you're done.
 
-<!-- Add a screenshot or GIF here: it makes the biggest difference to adoption. -->
+ ![YouTube playlist rendered as a list](.github/screenshot.png)
 
 ## Features
 
