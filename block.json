@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "playlist-list-block/playlist",
+	"title": "YouTube Playlist List",
+	"category": "embed",
+	"icon": "playlist-video",
+	"description": "Display a YouTube playlist as a clean, numbered list of videos.",
+	"keywords": [ "youtube", "playlist", "video", "list" ],
+	"textdomain": "playlist-list-block",
+	"attributes": {
+		"playlistId": { "type": "string", "default": "" },
+		"maxResults": { "type": "number", "default": 10 },
+		"showDurations": { "type": "boolean", "default": true }
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": { "margin": true }
+	},
+	"styles": [
+		{ "name": "dark", "label": "Dark", "isDefault": true },
+		{ "name": "light", "label": "Light" }
+	],
+	"editorScript": "plb-editor",
+	"style": "file:./assets/style.css"
+}

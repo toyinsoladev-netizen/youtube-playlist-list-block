@@ -1,0 +1,5 @@
+# Files excluded from "git archive" (the release zip)
+/.github export-ignore
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/README.md export-ignore

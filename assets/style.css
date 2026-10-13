@@ -1,0 +1,135 @@
+/* Playlist List Block for YouTube - front end + editor */
+
+.plb-list {
+	--plb-bg: #0f0f0f;
+	--plb-hover: #272727;
+	--plb-title: #f1f1f1;
+	--plb-muted: #aaaaaa;
+	list-style: none;
+	margin: 0 0 1.5em;
+	padding: 8px;
+	box-sizing: border-box;
+	background: var(--plb-bg);
+	border-radius: 12px;
+}
+
+.plb-list.is-style-light {
+	--plb-bg: #ffffff;
+	--plb-hover: #f2f2f2;
+	--plb-title: #0f0f0f;
+	--plb-muted: #606060;
+	border: 1px solid #e5e5e5;
+}
+
+.plb-list .plb-item {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.plb-list .plb-item::marker {
+	content: "";
+}
+
+.plb-list .plb-link {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 8px;
+	border-radius: 8px;
+	text-decoration: none;
+	box-shadow: none;
+}
+
+.plb-list .plb-link:hover,
+.plb-list .plb-link:focus-visible {
+	background: var(--plb-hover);
+}
+
+.plb-list .plb-number {
+	flex: 0 0 24px;
+	text-align: center;
+	font-size: 12px;
+	color: var(--plb-muted);
+}
+
+.plb-list .plb-thumb {
+	position: relative;
+	flex: 0 0 168px;
+	aspect-ratio: 16 / 9;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #222;
+}
+
+.plb-list .plb-thumb img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	object-fit: cover;
+}
+
+.plb-list .plb-badge {
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+	padding: 1px 4px;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.plb-list .plb-text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 0;
+}
+
+.plb-list .plb-title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	color: var(--plb-title);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.plb-list .plb-channel {
+	color: var(--plb-muted);
+	font-size: 13px;
+}
+
+.plb-notice {
+	padding: 12px 16px;
+	border: 1px dashed #b32d2e;
+	border-radius: 6px;
+	color: #b32d2e;
+	font-size: 14px;
+}
+
+.plb-placeholder-form {
+	display: flex;
+	align-items: flex-end;
+	gap: 8px;
+	width: 100%;
+}
+
+.plb-placeholder-form .components-base-control {
+	flex: 1;
+}
+
+@media (max-width: 480px) {
+	.plb-list .plb-thumb {
+		flex-basis: 120px;
+	}
+	.plb-list .plb-title {
+		font-size: 14px;
+	}
+}
