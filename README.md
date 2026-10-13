@@ -22,10 +22,14 @@ A tiny Gutenberg block that displays a YouTube playlist as a clean, numbered lis
 
 ## Installation
 
-1. Download playlist-list-block.zip from the Releases page.
-2. In WordPress: Plugins > Add New > Upload Plugin, then activate.
-3. Go to Settings > YouTube Playlist and paste your API key.
-4. Add the "YouTube Playlist List" block and enter a playlist ID.
+1. Download **playlist-list-block.zip** from the [latest release](https://github.com/toyinsoladev-netizen/youtube-playlist-list-block/releases/latest).
+2. In WordPress, go to **Plugins > Add New > Upload Plugin**, choose the zip and click **Install Now**, then **Activate**.
+3. Go to **Settings > YouTube Playlist** and paste your API key.
+4. Add the **YouTube Playlist List** block and enter a playlist ID.
+
+> **Note:** Don't use GitHub's green "Code > Download ZIP" button. It creates a folder named
+> `youtube-playlist-list-block-master`, which doesn't match the plugin folder name.
+> Always use the zip from the Releases page.
 
 ### Getting an API key
 
